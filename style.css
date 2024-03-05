@@ -1,0 +1,78 @@
+:root {
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--DarkBlue);
+    display: grid;
+    place-items: center;
+    position: relative;
+    font-family: 'Manrope';
+}
+.main-container {
+    background-color: var(--DarkGrayishBlue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 30vh;
+    width: 30rem;
+    gap: 2rem;
+}
+.title {
+    color: var(--NeonGreen);
+    text-transform: uppercase;
+    font-size: smaller;
+    font-weight: 800;
+    word-spacing: 5px;
+    line-height: 1rem;
+}
+.advice {
+    color: var(--NeonGreen);
+}
+.divider {
+    margin-bottom: 1rem;
+}
+.circle {
+    position: absolute;
+    bottom: -2rem;
+    height: 3rem;
+    width: 3rem;
+    padding: 12px;
+    background-color: var(--NeonGreen);
+    border-radius: 50%;
+}
+
+.dice {
+    cursor: pointer;
+}
+
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 600px) {
+    .main-container {
+        width: 25rem;
+    }
+    .divider {
+        width: 24rem;
+    }
+}
